@@ -9,12 +9,12 @@
 // The tests will always use some integral number, so don't worry about that in dynamic typed languages.
 
 function isSquare(n) {
-  if (n < 0) {
+  if (n < 0) {//check n is nagative
     return false;
-  } else if (n === 0 || n === 1) {
+  } else if (n === 0 || n === 1) {//check n is 0 or 1
     return true;
   }
-  for (let i = 1; i < n; i++) {
+  for (let i = 1; i < n; i++) {//loop for check square
     if (i * i === n) {
       return true;
     }
