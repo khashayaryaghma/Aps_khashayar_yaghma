@@ -10,17 +10,19 @@
 
 function aliasGen(fName, lName) {
   fName = fName[0].toUpperCase();
-  lName = lName[0].toUpperCase();
+  lName = lName[0].toUpperCase(); //replace uppercase first character to fName and lName
   if (Object.keys(firstName).includes(fName[0])) {
+    //check the first character includes the key of firstName object
     for (let fn in firstName) {
       if (fName[0] === fn) {
-        fName = firstName[fn];
+        //check match
+        fName = firstName[fn]; //replace the value of firstName object to fName
       }
     }
   } else {
-    fName = false;
+    fName = false; //if not includes fName equal false
   }
-
+  //do above task for second parameter
   if (Object.keys(firstName).includes(lName[0])) {
     for (let ln in surname) {
       if (lName[0] === ln) {
@@ -30,7 +32,7 @@ function aliasGen(fName, lName) {
   } else {
     lName = false;
   }
-
+  //at the end return result
   if (fName === false || lName === false) {
     return "Your name must start with a letter from A - Z.";
   } else {
