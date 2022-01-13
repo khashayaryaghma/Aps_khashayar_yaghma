@@ -24,14 +24,14 @@ const obj = {
   welsh: "Croeso",
 };
 function greet(language) {
-  if (Object.keys(obj).includes(language)) {
-    for (let lan in obj) {
+  if (Object.keys(obj).includes(language)) {// check parameter include above obj
+    for (let lan in obj) {//loop for check key of object is equal to input parameters
       if (lan === language) {
         language = obj[lan];
       }
     }
   } else {
-    language = obj.english;
+    language = obj.english;//if the input parameter not exist in the object keys
   }
   return language;
 }
