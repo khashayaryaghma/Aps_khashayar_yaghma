@@ -41,7 +41,8 @@ function aliasGen(fName, lName) {
 }
 
 ////////////////test//////////////////
-
+//this test don't work here
+//go to this link    https://www.codewars.com/kata/crash-override/train/javascript
 var firstName = {A: 'Alpha', B: 'Beta', C: 'Cache' /*...*/}
 var surname = { A: "Analogue", B: "Bomb", C: "Catalyst" /*...*/ };
 
