@@ -12,17 +12,17 @@
 // 3 friends go out together: A spends £20, B spends £15, and C spends £10. The function should return an object/dict showing that A should receive £5, B should receive £0, and C should pay £5.
 
 function splitTheBill(obj) {
-  let y = {};
-  let arr = Object.values(obj);
-  let avArr = arr.reduce((a, b) => a + b) / arr.length;
-  for (let key in obj) {
-    y[key] = obj[key] - avArr;
-    y[key] = parseFloat(y[key].toFixed(2));
+  let y = {};//create an empty object
+  let arr = Object.values(obj);//get values of input objext
+  let avArr = arr.reduce((a, b) => a + b) / arr.length;//get average of values
+  for (let key in obj) {//itrate key of obj
+    y[key] = obj[key] - avArr;//enter the y object key and value - average of input object value
+    y[key] = parseFloat(y[key].toFixed(2));//decimal
   }
   return y;
 }
 
-//////////////test////////////////////
+////////////////////test///////////////////////
 
 console.log(splitTheBill({ A: 20, B: 15, C: 10 }));
 console.log(splitTheBill({ A: 40, B: 25, X: 10 }));
