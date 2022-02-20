@@ -16,3 +16,10 @@ function testEven(n) {
     return false;
   }
 }
+
+////////////test///////////
+
+console.log(testEven(5));
+console.log(testEven(6));
+console.log(testEven(13));
+console.log(testEven(72));
