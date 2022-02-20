@@ -5,7 +5,7 @@ function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   return birds.filter((el)=>{
     if(!geese.includes(el)){
-      return el
+      return el;
     }
   })
 };
