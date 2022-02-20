@@ -7,3 +7,9 @@ var summation = function (num) {
   }
   return j;
 };
+
+//////////test////////////
+
+console.log(summation(17));//153
+console.log(summation(6));//21
+console.log(summation(66));//2211
