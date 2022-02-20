@@ -9,3 +9,20 @@ function gooseFilter (birds) {
     }
   })
 };
+
+//////////////test/////////////////
+
+console.log(
+  gooseFilter([
+    "Mallard",
+    "Hook Bill",
+    "African",
+    "Crested",
+    "Pilgrim",
+    "Toulouse",
+    "Blue Swedish",
+  ])
+);
+console.log(
+  gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+);
