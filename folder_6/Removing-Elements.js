@@ -9,3 +9,7 @@ function removeEveryOther(arr) {
   return array;
 }
 
+//////////test////////////////
+
+console.log(removeEveryOther(["hadi", "armin", "pouya", "hassan"]));
+console.log(removeEveryOther(["kian", "arad", "hossein", "arya", "arash", "sepehr", "nima"]));
